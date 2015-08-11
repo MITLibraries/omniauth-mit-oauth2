@@ -27,9 +27,10 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   provider :mit_oauth2, "MIT_OAUTH2_API_KEY", "MIT_OAUTH2_API_SECRET", {
     scope: "openid,name,email"
   }
+end
 ```
 
-Replace `MIT_OAUTH2_API_KEY` and `MIT_OAUTH2_API_SECRET` with the values obtained from registering your service through MIT OIDC.
+Replace `MIT_OAUTH2_API_KEY` and `MIT_OAUTH2_API_SECRET` with the values obtained from registering your service through MIT OIDC. You generally want to keep those out of version control so populate the values however you are handling secrets in your app.
 
 ## Devise
 
@@ -108,7 +109,7 @@ Devise.setup do |config|
 end
 ```
 
-Replace `MIT_OAUTH2_API_KEY` and `MIT_OAUTH2_API_SECRET` with the values obtained by registering your site.
+Replace `MIT_OAUTH2_API_KEY` and `MIT_OAUTH2_API_SECRET` with the values obtained by registering your site through MIT OIDC. You generally want to keep those out of version control so populate the values however you are handling secrets in your app.
 
 Now we need to set up the routes:
 
@@ -175,4 +176,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/MITLib
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
