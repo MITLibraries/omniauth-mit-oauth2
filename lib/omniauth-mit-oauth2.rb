@@ -1,0 +1,1 @@
+require "omniauth/mit_oauth2"
