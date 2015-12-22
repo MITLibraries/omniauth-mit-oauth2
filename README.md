@@ -2,6 +2,8 @@
 
 This gem provides an OmniAuth strategy for authenticating users through [MIT OpenID Connect](https://oidc.mit.edu/).
 
+[![Gem Version](https://badge.fury.io/rb/omniauth-mit-oauth2.svg)](https://badge.fury.io/rb/omniauth-mit-oauth2)
+
 ## Installation
 
 Add this line to your application's Gemfile:
